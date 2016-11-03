@@ -1,12 +1,3 @@
-@media (max-width: 750px) {
-  .name{
-    font-size: 10em;
-  }
-}/*end of media Q*/
-
-
-
-
 body {
   background: url('space_trees.jpeg') no-repeat center center fixed;*/
   -webkit-background-size: cover;
