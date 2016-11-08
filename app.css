@@ -1,41 +1,40 @@
 body {
-  background: url('space_trees.jpeg') no-repeat center center fixed;*/
+  background: url("space_trees.jpeg") no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  margin: 0 0 300px; /* bottom = footer height */
-}
-.beyno{
+  -o-background-size: cover; }
+
+.beyno {
   font-family: BEYNO;
   margin-bottom: 0;
-  color: white;
-}
-.main_container{
+  color: white; }
+
+.main_container {
   display: flex;
-  flex-direction: column;
-}
-.name_div{
+  flex-direction: column; }
+
+.name_div {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 1em;
-}
-.name{
+  margin-top: 1em; }
+
+.name {
   color: white;
-  font-size: 5em;
-}
-.sub_name{
+  font-size: 5em; }
+
+.sub_name {
   font-family: Ailerons;
   display: flex;
   flex-direction: row;
-  color: white;
-}
-.big_screen{
-  display: flex;
-}
-.small_screen{
+  color: white; }
+
+.big_screen {
+  display: flex; }
+
+.small_screen {
   display: none;
-  font-size: 20em;
-}
+  font-size: 20em; }
+
+/*# sourceMappingURL=app.css.map */
