@@ -11,24 +11,29 @@ body {
 
 .main_container {
   display: flex;
-  flex-direction: column; }
+  flex-direction: column;
+  align-items: center; }
 
 .name_div {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 1em; }
+  margin-top: 1em;
+  color: white; }
 
-.name {
-  color: white;
-  font-size: 5em; }
+@media screen and (max-width: 425px) {
+  .name {
+    font-size: 2em; } }
 
 .sub_name {
   font-family: Ailerons;
   display: flex;
-  flex-direction: row;
-  color: white; }
+  flex-direction: row; }
+
+@media screen and (max-width: 425px) {
+  .sub_name_item {
+    font-size: 1.5em; } }
 
 .big_screen {
   display: flex; }
