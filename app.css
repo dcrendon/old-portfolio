@@ -40,6 +40,9 @@ main {
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0.33) 0%, rgba(0, 0, 0, 0.1) 100%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#000000',GradientType=0 ); }
 
+.side-nav {
+  background-color: rgba(255, 255, 255, 0.8); }
+
 .marg-top {
   margin-top: 3em; }
 
