@@ -66,11 +66,80 @@ main
   margin-left: 1em
 .marg-right
   margin-right: 1em
-
+  // for footer
+.marg-left-f
+  margin-left: 3em
+.marg-right-f
+  margin-right: 3em
+// typography
 .goldin
   font-family: goldin
-
 .beyno
   font-family: BEYNO
   margin-bottom: 0
   color: white
+
+
+.neon
+  // make glow animation
+  // -webkit-animation-name: neon
+  // -webkit-animation-duration: 900ms
+  // -webkit-animation-iteration-count: 1
+  // -webkit-animation-timing-function: ease-in-out
+  color: #fff !important
+  text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #64b5f6, 0 0 30px #64b5f6, 0 0 40px #64b5f6, 0 0 55px #64b5f6, 0 0 75px #64b5f6 !important
+
+.play
+  -webkit-animation: animate .9s infinite
+  -moz-animation: animate .9s infinite
+  animation: animate .9s infinite
+
+@-webkit-keyframes animate
+  0%
+    text-shadow: none
+
+  10%
+    text-shadow: 0 0 5px #fff
+
+  50%
+    text-shadow: 0 0 75px #2196f3
+
+  90%
+    text-shadow: 0 0 5px #fff
+
+  100%
+    text-shadow: none
+
+
+
+@-moz-keyframes animate
+  0%
+    text-shadow: none
+
+  10%
+    text-shadow: 0 0 5px #fff
+
+  50%
+    text-shadow: 0 0 75px #2196f3
+
+  90%
+    text-shadow: 0 0 5px #fff
+
+  100%
+    text-shadow: none
+
+@keyframes animate
+  0%
+    text-shadow: none
+
+  10%
+    text-shadow: 0 0 5px #fff
+
+  50%
+    text-shadow: 0 0 75px #2196f3
+
+  90%
+    text-shadow: 0 0 5px #fff
+
+  100%
+    text-shadow: none

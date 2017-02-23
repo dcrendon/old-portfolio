@@ -52,6 +52,12 @@ main {
 .marg-right {
   margin-right: 1em; }
 
+.marg-left-f {
+  margin-left: 3em; }
+
+.marg-right-f {
+  margin-right: 3em; }
+
 .goldin {
   font-family: goldin; }
 
@@ -59,5 +65,48 @@ main {
   font-family: BEYNO;
   margin-bottom: 0;
   color: white; }
+
+.neon {
+  color: #fff !important;
+  text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #64b5f6, 0 0 30px #64b5f6, 0 0 40px #64b5f6, 0 0 55px #64b5f6, 0 0 75px #64b5f6 !important; }
+
+.play {
+  -webkit-animation: animate 0.9s infinite;
+  -moz-animation: animate 0.9s infinite;
+  animation: animate 0.9s infinite; }
+
+@-webkit-keyframes animate {
+  0% {
+    text-shadow: none; }
+  10% {
+    text-shadow: 0 0 5px #fff; }
+  50% {
+    text-shadow: 0 0 75px #2196f3; }
+  90% {
+    text-shadow: 0 0 5px #fff; }
+  100% {
+    text-shadow: none; } }
+@-moz-keyframes animate {
+  0% {
+    text-shadow: none; }
+  10% {
+    text-shadow: 0 0 5px #fff; }
+  50% {
+    text-shadow: 0 0 75px #2196f3; }
+  90% {
+    text-shadow: 0 0 5px #fff; }
+  100% {
+    text-shadow: none; } }
+@keyframes animate {
+  0% {
+    text-shadow: none; }
+  10% {
+    text-shadow: 0 0 5px #fff; }
+  50% {
+    text-shadow: 0 0 75px #2196f3; }
+  90% {
+    text-shadow: 0 0 5px #fff; }
+  100% {
+    text-shadow: none; } }
 
 /*# sourceMappingURL=app.css.map */
