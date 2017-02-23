@@ -1,22 +1,86 @@
 $break-mobile: 425px
 
 @font-face
-  font-family: 'BEYNO'
-  src: url('BEYNO.ttf')
+  font-family: 'goldin'
+  src: url('goldin_light-webfont.woff2') format("woff2"), url('goldin_light-webfont.woff') format("woff")
+  font-weight: normal
+  font-style: normal
+
 
 @font-face
-  font-family: 'Ailerons'
-  src: url('Ailerons.otf')  
-
+  font-family: 'beyno'
+  src: url('beyno-webfont.woff2') format("woff2"), url('beyno-webfont.woff') format("woff")
+  font-weight: normal
+  font-style: normal
 
 =background-size($x)
   -webkit-background-size: $x
   -moz-background-size: $x
   -o-background-size: $x
 
+=linearGradient($top, $bottom)
+  background: $top
+  background: -moz-linear-gradient(top,  $top 0%, $bottom 100%)
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,$top), color-stop(100%,$bottom))
+  background: -webkit-linear-gradient(top,  $top 0%,$bottom 100%)
+  background: -o-linear-gradient(top,  $top 0%,$bottom 100%)
+  background: -ms-linear-gradient(top,  $top 0%,$bottom 100%)
+  background: linear-gradient(to bottom,  $top 0%,$bottom 100%)
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#000000',GradientType=0 )
+
+
 body
-  background: url('space_trees.jpeg') no-repeat center center fixed
+  background: url('vape.jpg') no-repeat center center fixed
   +background-size(cover)
+// .wrap
+//   background: url('vape.jpg') no-repeat center center fixed
+//   +background-size(cover)
+//   width: 100%
+//   height: 56em
+// .wrap2
+//   background: url('img.jpg') no-repeat center center fixed
+//   +background-size(cover)
+//   width: 100%
+//   height: 56em
+// .wrap
+//   height: 60em
+//   background: url(vape.jpg) no-repeat center center fixed
+//   -webkit-background-size: cover
+//   -moz-background-size: cover
+//   -o-background-size: cover
+//   background-size: cover
+.text
+  z-index: 99
+  text-align: center
+  width: 100%
+  // text-shadow: 0px 0px 100px rgba(0,0,0,20)
+  // text-shadow: -10px 10px 0px #00e6e6, -20px 20px 0px #01cccc, -30px 30px 0px #00bdbd
+  text-shadow: 0px 3px 0px #b2a98f, 0px 14px 10px rgba(0, 0, 0, 0.15), 0px 24px 2px rgba(0, 0, 0, 0.1), 0px 34px 30px rgba(0, 0, 0, 0.1)
+
+.nav
+  +linearGradient(rgba(0,0,0,0.33), rgba(0,0,0,0.1))
+
+
+.marg-top
+  margin-top: 3em
+
+// .bg
+//   z-index: 1
+//   // position: fixed
+//   // top: 0
+//   // left: 0
+//
+//   /* Preserve aspet ratio */
+//   min-width: 100%
+//   min-height: 100%
+
+//
+//
+//
+//
+
+.goldin
+  font-family: goldin
 
 .beyno
   font-family: BEYNO
