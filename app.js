@@ -1,4 +1,7 @@
 $(document).ready(function() {
+  if($(window).width()<992){
+   $('.work-left, .work-right').removeClass('col s6');
+ }
 
   // initialize
   $('.tooltipped').tooltip({delay: 50});
@@ -9,6 +12,16 @@ $(document).ready(function() {
     draggable: true // Choose whether you can drag to open on touch screens
   });
   $('#bod').animate({opacity: 0}, 0).css({'background-image': 'url("vape.jpg") no-repeat center center fixed'}).animate({opacity: 1}, 2500);
+
+  // changes size of work cards
+  $(window).resize(function(){
+   if($(window).width()<992){
+    $('.work-left, .work-right').removeClass('col s6');
+  }else if ($(window).width()>992) {
+    $('.work-left, .work-right').addClass('col s6');
+  }
+  });
+
 
 
   $(".nav-contact").click(function() {
@@ -54,7 +67,7 @@ $(document).ready(function() {
       console.log(cards);
       $('html, body').animate({
           scrollTop: $(".work").offset().top
-      }, 2000);
+      }, 1000);
     };
 
 
