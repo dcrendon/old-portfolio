@@ -1,4 +1,4 @@
-$break-mobile: 425px
+$break-mobile: 992px
 
 @font-face
   font-family: 'goldin'
@@ -61,7 +61,7 @@ main
 
 // Helpers
 .hidden
-  display: none
+  display: none !important
 .marg-top
   margin-top: 3em
 .marg-left
@@ -145,3 +145,23 @@ main
 
   100%
     text-shadow: none
+
+@media (max-width: $break-mobile)
+  .work
+    display: flex
+    flex-direction: column
+    align-items: center
+    margin-top: 2em
+
+  .work-left
+    display: flex
+    flex-direction: column
+    margin-left: 0em !important
+
+  .work-right
+    display: flex
+    flex-direction: column
+    margin-left: 0em !important
+
+  .card-outer
+    width: 100% !important
