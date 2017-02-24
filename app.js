@@ -7,6 +7,9 @@ $(document).ready(function() {
 
 
   $(".nav-contact").click(function() {
+    $('html, body').animate({
+        scrollTop: $(".page-footer").offset().top
+    }, 2000);
     // add neon
     $(".foot-icon").addClass("play");
     // remove neon
@@ -16,7 +19,6 @@ $(document).ready(function() {
   });
 
   var cards = false;
-  console.log(cards);
   $(".nav-work").click(function () {
     console.log(cards);
     if (cards) {
