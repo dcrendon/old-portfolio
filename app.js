@@ -52,6 +52,9 @@ $(document).ready(function() {
       $(".work-right, .work-left").removeClass("hidden");
       cards = true;
       console.log(cards);
+      $('html, body').animate({
+          scrollTop: $(".work").offset().top
+      }, 2000);
     };
 
 
