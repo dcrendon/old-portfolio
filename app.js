@@ -1,9 +1,15 @@
 $(document).ready(function() {
+  // preloader
+  $(window).load(function(){
+	  $('#preloader').fadeOut('slow',function(){$(this).remove();});
+  });
+
+  // for work cards
   if($(window).width()<992){
    $('.work-left, .work-right').removeClass('col s6');
- }
+  }
 
-  // initialize
+  // initialize some elements
   $('.tooltipped').tooltip({delay: 50});
   $(".button-collapse").sideNav({
     menuWidth: 300, // Default is 300
