@@ -1,7 +1,11 @@
 $(document).ready(function() {
   // preloader
   $(window).load(function(){
-	  $('#preloader').fadeOut('slow',function(){$(this).remove();});
+    $('#preloader').animate({opacity: 1}, 0).animate({opacity: 0}, 2500);
+	  // $('#preloader').fadeOut('slow',function(){
+    //   $('#preloader').animate({opacity: 1}, 0).animate({opacity: 0}, 2500);
+    //   // $(this).remove();
+    // });
   });
 
   // for work cards
