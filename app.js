@@ -1,12 +1,10 @@
 $(document).ready(function() {
-  // preloader/ wont work rn becuse preloader never closes
+  // preloader
   $(window).load(function(){
     $('#preloader').animate({opacity: 1}, 0).animate({opacity: 0}, 2500, function () {
       $(this).remove();
     });
-
   });
-
 
 
   // initialize some elements
