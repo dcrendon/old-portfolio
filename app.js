@@ -1,4 +1,11 @@
 $(document).ready(function() {
+
+  // for work cards
+  if($(window).width()<992){
+   $('.work-left, .work-right').removeClass('col s6');
+ }else {
+   return;
+ }
   // preloader
   $(window).load(function(){
     $('#preloader').animate({opacity: 1}, 0).animate({opacity: 0}, 2500, function () {
@@ -75,10 +82,7 @@ $(document).ready(function() {
     };
   });
 
-  // for work cards
-  // if($(window).width()<992){
-  //  $('.work-left, .work-right').removeClass('col s6');
-  // }
+
   //
   // $(window).load(function(){
   //   $('#preloader').animate({opacity: 1}, 0).animate({opacity: 0}, 2500);
