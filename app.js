@@ -1,17 +1,13 @@
 $(document).ready(function() {
-  // preloader
+  // preloader/ wont work rn becuse preloader never closes
   $(window).load(function(){
-    $('#preloader').animate({opacity: 1}, 0).animate({opacity: 0}, 2500);
-	  // $('#preloader').fadeOut('slow',function(){
-    //   $('#preloader').animate({opacity: 1}, 0).animate({opacity: 0}, 2500);
-    //   // $(this).remove();
-    // });
+    $('#preloader').animate({opacity: 1}, 0).animate({opacity: 0}, 2500, function () {
+      $(this).remove();
+    });
+
   });
 
-  // for work cards
-  if($(window).width()<992){
-   $('.work-left, .work-right').removeClass('col s6');
-  }
+
 
   // initialize some elements
   $('.tooltipped').tooltip({delay: 50});
@@ -21,7 +17,7 @@ $(document).ready(function() {
     closeOnClick: true, // Closes side-nav on <a> clicks, useful for Angular/Meteor
     draggable: true // Choose whether you can drag to open on touch screens
   });
-  $('#bod').animate({opacity: 0}, 0).css({'background-image': 'url("vape.jpg") no-repeat center center fixed'}).animate({opacity: 1}, 2500);
+  $('#bod').animate({opacity: 0}, 0).css({'background-image': 'url("vape2.jpeg") no-repeat center center fixed'}).animate({opacity: 1}, 2500);
 
   // changes size of work cards
   $(window).resize(function(){
@@ -79,10 +75,18 @@ $(document).ready(function() {
           scrollTop: $(".work").offset().top
       }, 1000);
     };
-
-
-
   });
 
-
+  // for work cards
+  // if($(window).width()<992){
+  //  $('.work-left, .work-right').removeClass('col s6');
+  // }
+  //
+  // $(window).load(function(){
+  //   $('#preloader').animate({opacity: 1}, 0).animate({opacity: 0}, 2500);
+  //   // $('#preloader').fadeOut('slow',function(){
+  //   //   $('#preloader').animate({opacity: 1}, 0).animate({opacity: 0}, 2500);
+  //   //   // $(this).remove();
+  //   // });
+  // });
 });
