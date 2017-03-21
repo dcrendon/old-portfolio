@@ -1,13 +1,3 @@
-.js div#preloader {
-  position: fixed;
-  left: 0;
-  top: 0;
-  z-index: 999;
-  width: 100%;
-  height: 100%;
-  overflow: visible;
-  background: #c1d1fd !important; }
-
 .preload-images {
   background: url(vape2.jpeg) no-repeat -9999px -9999px, url(jp2.png) no-repeat -9999px -9999px, url(fotw.png) no-repeat -9999px -9999px, url(dnb.png) no-repeat -9999px -9999px, url(bnb.png) no-repeat -9999px -9999px; }
 
@@ -21,8 +11,16 @@
   src: url("beyno-webfont.woff2") format("woff2"), url("beyno-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal; }
+.goldin {
+  font-family: goldin; }
+
+.beyno {
+  font-family: BEYNO;
+  margin-bottom: 0;
+  color: white; }
+
 body {
-  background: url("vape2.jpeg") no-repeat center center fixed;
+  background: url("../images/vape2.jpeg") no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -73,14 +71,6 @@ main {
 
 .marg-right-f {
   margin-right: 3em; }
-
-.goldin {
-  font-family: goldin; }
-
-.beyno {
-  font-family: BEYNO;
-  margin-bottom: 0;
-  color: white; }
 
 .neon {
   color: #fff !important;
