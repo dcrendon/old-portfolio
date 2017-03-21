@@ -80,13 +80,11 @@ $(document).ready(function() {
     };
   });
 
+  $("#img-highQuality").off().on("load", function() {
+    $("body").css({
+        "background-image" : "url(images/vape2.jpeg)"
+    });
+  });
 
-  //
-  // $(window).load(function(){
-  //   $('#preloader').animate({opacity: 1}, 0).animate({opacity: 0}, 2500);
-  //   // $('#preloader').fadeOut('slow',function(){
-  //   //   $('#preloader').animate({opacity: 1}, 0).animate({opacity: 0}, 2500);
-  //   //   // $(this).remove();
-  //   // });
-  // });
+
 });
